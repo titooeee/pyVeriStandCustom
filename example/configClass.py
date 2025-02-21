@@ -4,3 +4,4 @@ from niveristand.library import wait
 
 class config_1:
     max_val  = DoubleValue(10)
+    chann_1 = "vsChannelPath"
