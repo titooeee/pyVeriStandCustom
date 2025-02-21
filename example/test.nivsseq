@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RealTimeSequence xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<FileFormatVersion Major="2012" Minor="0" Fix="0" Build="0" />
+	<Version Major="1" Minor="0" Fix="0" Build="2" />
+	<References />
+	<Variables>
+		<ReturnType>
+			<Identifier>Output</Identifier>
+			<DefaultValue xsi:type="VoidValue" />
+		</ReturnType>
+		<Parameters />
+		<LocalVariables>
+			<LocalDeclaration>
+				<Identifier>lv_var3_0</Identifier>
+				<DefaultValue xsi:type="DoubleValue">
+					<Value>10</Value>
+				</DefaultValue>
+			</LocalDeclaration>
+			<LocalDeclaration>
+				<Identifier>lv_var2_2</Identifier>
+				<DefaultValue xsi:type="DoubleValue">
+					<Value>10</Value>
+				</DefaultValue>
+			</LocalDeclaration>
+			<LocalDeclaration>
+				<Identifier>lv_var4_4</Identifier>
+				<DefaultValue xsi:type="DoubleValue">
+					<Value>0</Value>
+				</DefaultValue>
+			</LocalDeclaration>
+		</LocalVariables>
+		<ChannelReferences>
+			<ChannelReferenceDeclaration>
+				<Identifier>ch_var5</Identifier>
+				<DefaultValue xsi:type="DoubleValue">
+					<Value>0</Value>
+				</DefaultValue>
+				<Channel Path="mycupoftea" />
+			</ChannelReferenceDeclaration>
+		</ChannelReferences>
+	</Variables>
+	<Code>
+		<Setup>
+			<Body />
+		</Setup>
+		<Main>
+			<Body>
+				<Statement xsi:type="Expression">
+					<ExpressionString>lv_var3_0 = 10.0</ExpressionString>
+				</Statement>
+				<Statement xsi:type="Expression">
+					<ExpressionString>lv_var2_2 = 10.0</ExpressionString>
+				</Statement>
+				<Statement xsi:type="Expression">
+					<ExpressionString>lv_var4_4 = 0.0</ExpressionString>
+				</Statement>
+				<Statement xsi:type="Expression">
+					<ExpressionString>lv_var4_4 = ((lv_var3_0) + (lv_var2_2))</ExpressionString>
+				</Statement>
+				<Statement xsi:type="Expression">
+					<ExpressionString>ch_var5 = ((lv_var3_0) + (lv_var2_2))</ExpressionString>
+				</Statement>
+			</Body>
+		</Main>
+		<CleanUp>
+			<Body />
+		</CleanUp>
+	</Code>
+</RealTimeSequence>
